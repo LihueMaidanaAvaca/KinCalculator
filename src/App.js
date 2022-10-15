@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { useState }from 'react'
 
 function App() {
+  const[date, setDate] = useState([{day:28, month:4, year:1994}])
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <input type="number" min="1" max="31" ></input>
+        <input type="number" min="1" max="12" ></input>
+        <input type="number" ></input>
+        <button >➕</button>
       </header>
     </div>
   );
