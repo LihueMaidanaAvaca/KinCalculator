@@ -1,17 +1,44 @@
 // import logo from './logo.svg';
 import './App.css';
-import { useState }from 'react'
+import { useState, useRef }from 'react'
+import { v4 as uuidv4 } from 'uuid'
+import { TodoList } from './components/TodoList'
+
+
 
 function App() {
-  const[date, setDate] = useState([{day:28, month:4, year:1994}])
+  const[dates, setDates] = useState([{day:31, month:5, year:1995}])
+
+  const todoDayRef = useRef();
+  const todoMonthRef = useRef();
+  const todoYearRef = useRef();
+
+  const handleDateAdd = () => {
+    const day = todoDayRef.current.value;
+    if(day === '') return;
+    const month = todoMonthRef.current.value;
+    if(month === '') return;
+    const year = todoYearRef.current.value;
+    if(month === '') return;
+
+    setDates((prevTodos) => {
+      return [...prevTodos, {id: uuidv4(), day, month, year}]
+    })
+    
+    todoDayRef.current.value = null;
+    todoMonthRef.current.value = null;
+    todoYearRef.current.value = null;
+  }
+
 
   return (
     <div className="App">
       <header className="App-header">
-        <input type="number" min="1" max="31" ></input>
-        <input type="number" min="1" max="12" ></input>
-        <input type="number" ></input>
-        <button >➕</button>
+        <TodoList dates={dates} />
+        <input ref={todoDayRef} type="number" min="1" max="31" ></input>
+        <input ref={todoMonthRef} type="number" min="1" max="12" ></input>
+        <input ref={todoYearRef} type="number" ></input>
+        <button onClick={handleDateAdd} >💫</button>
       </header>
     </div>
   );
