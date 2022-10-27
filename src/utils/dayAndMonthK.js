@@ -1,46 +1,30 @@
 export default function dayAndMonthK(day, month) {  
-  let tableOne = 0;
-  
-  switch (month) {
-  case 1:
-    tableOne = day+54;
-    break;
-  case 2:
-    tableOne = day+85;
-    break;
-  case 3:
-    tableOne = day+113;
-    break;
-  case 4:
-    tableOne = day+144;
-    break;
-  case 5:
-    tableOne = day+174;
-    break;
-  case 6:
-    tableOne = day+206;
-    break;
-  case 7:
-    tableOne = day+236; 
-    break;
-  case 8:
-    tableOne = day+6;
-    break;
-  case 9:
-    tableOne = day+37;
-    break;
-  case 10:
-    tableOne = day+67;
-    break;   
-  case 11:
-    tableOne = day+98;
-    break;
-  case 12:
-    tableOne = day+128;
-    break;
-  default:
-    tableOne = 'Lo lamentamos, por el momento no disponemos de ' + month + '.';
-}
-
-    return tableOne
-}
+  let d = parseInt(day)
+  let m = parseInt(month)
+    if(month === 1) {
+      return d+54;
+    } else if (month === 2) {
+      return d+85;
+    } else if (month === 3) {
+      return d+113;
+    } else if (m === 4) {
+      return d+144;
+    } else if (month === 5) {
+      return d+174;
+    } else if (month === 6) {
+      return d+206;
+    } else if (month === 7) {
+      return d+236;
+    } else if (month === 8) {
+      return d+206;
+    } else if (month === 9) {
+      return d+37;
+    } else if (month === 10) {
+      return d+67;
+    } else if (month === 11) {
+      return d+98;
+    } else if (month === 12) {
+      return d+128;
+    } 
+      
+  }

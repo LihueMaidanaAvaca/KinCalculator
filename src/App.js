@@ -30,6 +30,7 @@ function App() {
     todoYearRef.current.value = null;
   }
 
+  console.log(dates)
 
   return (
     <div className="App">
