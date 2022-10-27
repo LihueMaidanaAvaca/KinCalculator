@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
+import yearK from '../utils/yearK';
+import dayAndMonthK from '../utils/dayAndMonthK,js';
 
 export function TodoItem({ date }) {
-  const { day, month, year}= date
-
-  
+  const { day : d, month : m, year : y }= date
 
     return (
     <li>
-        {day}-{month}-{year}
+        {yearK(y)}
     </li>
   )
 }

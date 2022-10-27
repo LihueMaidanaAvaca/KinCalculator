@@ -311,7 +311,6 @@ if(tono === 1){
     } else {
       onda = ondaNum
     }
-console.log(onda,sello, 'onda')
   switch(onda){
     case 0:
     onda = 'Sol';
@@ -382,10 +381,10 @@ let oculto = 0;
 oculto = 21 - sello;
 
 switch(oculto){
-    case 0:
+    case 20:
     oculto = 'Sol Amarillo';
     break;
-    case 1:
+    case 21:
     oculto = 'Dragon Rojo';
     break;
     case 2:
@@ -593,7 +592,8 @@ if(tono > 5){
   } while (guia > 5);
 }
 
- 
+  console.log(guia)
+
 switch(guia){
   case 1:
     guia = sello;
@@ -603,13 +603,25 @@ switch(guia){
       guia = (sello - 8) + 20
     } else guia = sello - 8
     break;
+  case 3:
+    if (sello > 16){
+      guia = (sello + 4) - 20
+    } else guia = sello + 4
+    break;  
   case 4:
     if (sello < 4){
       guia = (sello + 20) - 4;
     } else guia = sello - 4;
     break;
+  case 5:
+    if (sello > 12){
+      guia = (sello + 8) - 20
+    } else guia = sello + 8
+    break;  
 }
 
+  console.log(guia)
+  
 switch(guia){
     case 0:
     guia = 'Sol Amarillo';
@@ -630,7 +642,7 @@ switch(guia){
     guia = 'Serpiente Roja';
     break;
     case 6:
-    guia = 'Muerte/Enlazador de Mundos Blanco';
+    guia = 'Muerte/Enlazador Blanco';
     break;
     case 7:
     guia = 'Mano Negra/Azul';
@@ -690,4 +702,8 @@ return {
 }
 }
 
-kin(antesAhiDespues(1995),cuentaPorFavor([31,5]))
+let day = 31;
+let month = 5;
+let year = 1995;
+
+kin(antesAhiDespues(year),cuentaPorFavor([day,month]))
