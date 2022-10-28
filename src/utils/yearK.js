@@ -1,18 +1,19 @@
 export default function yearK(year){
     let tableTwo = 0
+    let y = parseInt(year)
     
-    if (year < 1957){
+    if (y < 1957){
       do {
-      year += 52;
-      } while (year < 1957);
-      tableTwo = year
-    } else if(year >= 2009){
+      y += 52;
+      } while (y < 1957);
+      tableTwo = y
+    } else if(y >= 2009){
       do {
-      year -= 52;
-      } while (year > 2009);
-      tableTwo = year
+      y -= 52;
+      } while (y > 2009);
+      tableTwo = y
     } else {
-      tableTwo = year
+      tableTwo = y
     }
     
     let key = (tableTwo-1957).toString().split('')
