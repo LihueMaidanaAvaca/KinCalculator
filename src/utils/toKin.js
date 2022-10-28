@@ -7,15 +7,15 @@ export default function toKin(año, fecha){
     
     let sello = kinMaya 
     
-      do {
+    if(sello > 20){do {
       sello -= 20;
-      } while (sello >= 20);
+      } while (sello >= 20);}
     
     let tono = kinMaya
     
-      do {
+    if(tono > 13){do {
       tono -= 13;
-      } while (tono > 13);
+      } while (tono > 13);}
     
     let selloSolar = ''
     
