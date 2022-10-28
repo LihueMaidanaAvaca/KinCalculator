@@ -1,3 +1,6 @@
+import switchTone from "./switchTone";
+import switchSeal from "./switchSeal";
+
 export default function toKin(año, fecha){
     let kinMaya = año+fecha
     
@@ -576,18 +579,20 @@ export default function toKin(año, fecha){
         break;
     }
         
-    return [
-    //   kinMaya,
-    //   tono,
-    //   sello,
-    //   selloSolar,
-    //   tonoLunar,
-    //   raza,
-      selloSolar+' '+tonoLunar+' '+raza,
-    //   onda,
-    //   oculto.split(' ').join(' '+tonoOculto+' '),
-    //   analogo.split(' ').join(' '+tonoLunar+' '),
-    //   antipoda.split(' ').join(' '+tonoLunar+' '),
-    //   guia.split(' ').join(' '+tonoLunar+' ')
-    ]
+    return {
+      
+      kin: kinMaya,
+      tono: tono,
+      sello: sello,
+      tribu: selloSolar,
+      vibracion: tonoLunar,
+      raza: raza,
+      Umbral: selloSolar+' '+tonoLunar+' '+raza,
+      Onda: onda,
+      Oculto: oculto.split(' ').join(' '+tonoOculto+' '),
+      CatalizadorAnalogo: analogo.split(' ').join(' '+tonoLunar+' '),
+      ReflejoAntipoda: antipoda.split(' ').join(' '+tonoLunar+' '),
+      Guia: guia.split(' ').join(' '+tonoLunar+' ')
+    }
+   
     }

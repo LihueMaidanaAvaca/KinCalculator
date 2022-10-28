@@ -1,3 +1,5 @@
+import switchTone from "./switchTone";
+
 function cuentaPorFavor(nacimiento) {  
   let tabla1 = 0;
   let tabla2 = 0;
