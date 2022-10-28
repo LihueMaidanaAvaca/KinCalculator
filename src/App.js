@@ -36,9 +36,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <TodoList dates={dates} />
-        <input ref={todoDayRef} type="number" min="1" max="31" ></input>
-        <input ref={todoMonthRef} type="number" min="1" max="12" ></input>
-        <input ref={todoYearRef} type="number" ></input>
+        <input ref={todoDayRef} type="number" min="1" max="31" placeholder="dd"></input>
+        <input ref={todoMonthRef} type="number" min="1" max="12" placeholder="mm"></input>
+        <input ref={todoYearRef} type="number" placeholder="yyyy"></input>
         <button onClick={handleDateAdd} >💫</button>
       </header>
     </div>
