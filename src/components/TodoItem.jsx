@@ -9,8 +9,8 @@ export function TodoItem({ date }) {
   let kin = toKin( yearK(y), dayAndMonthK(d,m) )
 
     return (
-    <li>
-        {[kin.Oculto]}
-    </li>
+    <><img src={kin.image} alt="sello"></img><li>
+        {[kin.Umbral]}
+      </li></>
   )
 }

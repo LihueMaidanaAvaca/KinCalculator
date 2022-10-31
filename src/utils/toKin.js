@@ -1,6 +1,7 @@
 import switchTone from "./switchTone";
 import switchSeal from "./switchSeal";
 import switchSealoffcolor from "./switchSealoffcolor";
+import imgSeals from "./imgSeals";
 
 export default function toKin(año, fecha){
     let kinMaya = año+fecha
@@ -144,7 +145,8 @@ export default function toKin(año, fecha){
       Oculto: switchSeal(oculto).split(' ').join(' '+switchTone(tonoOculto)+' '),
       CatalizadorAnalogo: switchSeal(analogo).split(' ').join(' '+switchTone(tono)+' '),
       ReflejoAntipoda: switchSeal(antipoda).split(' ').join(' '+switchTone(tono)+' '),
-      Guia: switchSeal(guia).split(' ').join(' '+switchTone(tono)+' ')
+      Guia: switchSeal(guia).split(' ').join(' '+switchTone(tono)+' '),
+      image: imgSeals(sello)
     }
    
     }
