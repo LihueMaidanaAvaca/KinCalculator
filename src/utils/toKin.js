@@ -1,5 +1,6 @@
 import switchTone from "./switchTone";
 import switchSeal from "./switchSeal";
+import switchSealoffcolor from "./switchSealoffcolor";
 
 export default function toKin(año, fecha){
     let kinMaya = año+fecha
@@ -20,158 +21,11 @@ export default function toKin(año, fecha){
       tono -= 13;
       } while (tono > 13);}
     
-    let selloSolar = ''
     
-    switch(sello){
-        case 0:
-        selloSolar = 'Sol';
-        break;
-        case 1:
-        selloSolar = 'Dragon';
-        break;
-        case 2:
-        selloSolar = 'Viento';
-        break;
-        case 3:
-        selloSolar = 'Noche';
-        break;
-        case 4:
-        selloSolar = 'Semilla';
-        break;
-        case 5:
-        selloSolar = 'Serpiente';
-        break;
-        case 6:
-        selloSolar = 'Muerte/Enlazador de Mundos';
-        break;
-        case 7:
-        selloSolar = 'Mano';
-        break;
-        case 8:
-        selloSolar = 'Estrella';
-        break;
-        case 9:
-        selloSolar = 'Luna';
-        break;
-        case 10:
-        selloSolar = 'Perro';
-        break;
-        case 11:
-        selloSolar = 'Mono';
-        break;
-        case 12:
-        selloSolar = 'Humano';
-        break;
-        case 13:
-        selloSolar = 'Caminante del Cielo';
-        break;
-        case 14:
-        selloSolar = 'Mago';
-        break;
-        case 15:
-        selloSolar = 'Aguila';
-        break;
-        case 16:
-        selloSolar = 'Guerrero';
-        break;
-        case 17:
-        selloSolar = 'Tierra';
-        break;
-        case 18:
-        selloSolar = 'Espejo';
-        break;
-        case 19:
-        selloSolar = 'Tormenta';
-        break;
-    }
-    
-    let tonoLunar = ''
-    
-    switch(tono){
-      case 1:
-        tonoLunar = 'Magnetico';
-        break;
-      case 2:
-        tonoLunar = 'Lunar/Polar';
-        break;
-      case 3:
-        tonoLunar = 'Electrico';
-        break;
-      case 4:
-        tonoLunar = 'Auto-Existente';
-        break;
-      case 5:
-        tonoLunar = 'Entonado';
-        break;
-      case 6:
-        tonoLunar = 'Ritmico';
-        break;
-      case 7:
-        tonoLunar = 'Resonante';
-        break;
-      case 8:
-        tonoLunar = 'Galactico';
-        break;
-      case 9:
-        tonoLunar = 'Solar';
-        break;
-      case 10:
-        tonoLunar = 'Planetario';
-        break;
-      case 11:
-        tonoLunar = 'Espectral';
-        break;
-      case 12:
-        tonoLunar = 'Cristal';
-        break;
-      case 13:
-        tonoLunar = 'Cosmico';
-        break;  
-    }
     
     let tonoOculto = 14 - tono;
     
-    switch(tonoOculto){
-      case 1:
-        tonoOculto = 'Magnetico';
-        break;
-      case 2:
-        tonoOculto = 'Lunar/Polar';
-        break;
-      case 3:
-        tonoOculto = 'Electrico';
-        break;
-      case 4:
-        tonoOculto = 'Auto-Existente';
-        break;
-      case 5:
-        tonoOculto = 'Entonado';
-        break;
-      case 6:
-        tonoOculto = 'Ritmico';
-        break;
-      case 7:
-        tonoOculto = 'Resonante';
-        break;
-      case 8:
-        tonoOculto = 'Galactico';
-        break;
-      case 9:
-        tonoOculto = 'Solar';
-        break;
-      case 10:
-        tonoOculto = 'Planetario';
-        break;
-      case 11:
-        tonoOculto = 'Espectral';
-        break;
-      case 12:
-        tonoOculto = 'Cristal';
-        break;
-      case 13:
-        tonoOculto = 'Cosmico';
-        break;   
-    }
+    
     
     let color = kinMaya
     
@@ -194,7 +48,8 @@ export default function toKin(año, fecha){
       case 4:
         raza = 'Amarillo';
         break;
-        
+      default:
+        raza = 'error';  
     }
     
     let onda = 0
@@ -209,203 +64,23 @@ export default function toKin(año, fecha){
         } else {
           onda = ondaNum
         }
-      switch(onda){
-        case 0:
-        onda = 'Sol';
-        break;
-        case 1:
-        onda = 'Dragon';
-        break;
-        case 2:
-        onda = 'Viento';
-        break;
-        case 3:
-        onda = 'Noche';
-        break;
-        case 4:
-        onda = 'Semilla';
-        break;
-        case 5:
-        onda = 'Serpiente';
-        break;
-        case 6:
-        onda = 'Muerte/Enlazador de Mundos';
-        break;
-        case 7:
-        onda = 'Mano';
-        break;
-        case 8:
-        onda = 'Estrella';
-        break;
-        case 9:
-        onda = 'Luna';
-        break;
-        case 10:
-        onda = 'Perro';
-        break;
-        case 11:
-        onda = 'Mono';
-        break;
-        case 12:
-        onda = 'Humano';
-        break;
-        case 13:
-        onda = 'Caminante del Cielo';
-        break;
-        case 14:
-        onda = 'Mago';
-        break;
-        case 15:
-        onda = 'Aguila';
-        break;
-        case 16:
-        onda = 'Guerrero';
-        break;
-        case 17:
-        onda = 'Tierra';
-        break;
-        case 18:
-        onda = 'Espejo';
-        break;
-        case 19:
-        onda = 'Tormenta';
-        break;
-    }
+      
     
     
     let oculto = 0;
     
-    oculto = 21 - sello;
+    if(sello === 0){
+      oculto = 1
+    } else if(sello === 1){
+      oculto = 0
+    }else{oculto = 21 - sello;}
     
-    switch(oculto){
-        case 20:
-        oculto = 'Sol Amarillo';
-        break;
-        case 21:
-        oculto = 'Dragon Rojo';
-        break;
-        case 2:
-        oculto = 'Viento Blanco';
-        break;
-        case 3:
-        oculto = 'Noche Negra/Azul';
-        break;
-        case 4:
-        oculto = 'Semilla Amarillo';
-        break;
-        case 5:
-        oculto = 'Serpiente Rojo';
-        break;
-        case 6:
-        oculto = 'Muerte/Enlazador de Mundos Blanco';
-        break;
-        case 7:
-        oculto = 'Mano Negra/Azul';
-        break;
-        case 8:
-        oculto = 'Estrella Amarillo';
-        break;
-        case 9:
-        oculto = 'Luna Rojo';
-        break;
-        case 10:
-        oculto = 'Perro Blanco';
-        break;
-        case 11:
-        oculto = 'Mono Negra/Azul';
-        break;
-        case 12:
-        oculto = 'Humano Amarillo';
-        break;
-        case 13:
-        oculto = 'Caminante del Cielo Rojo';
-        break;
-        case 14:
-        oculto = 'Mago Blanco';
-        break;
-        case 15:
-        oculto = 'Aguila Negra/Azul';
-        break;
-        case 16:
-        oculto = 'Guerrero Amarillo';
-        break;
-        case 17:
-        oculto = 'Tierra Rojo';
-        break;
-        case 18:
-        oculto = 'Espejo Blanco';
-        break;
-        case 19:
-        oculto = 'Tormenta Negra/Azul';
-        break;
-    }
-    
+        
     let analogo = 0;
       
     analogo = 19 - sello;
     
-    switch(analogo){
-        case 0:
-        analogo = 'Sol Amarillo';
-        break;
-        case 1:
-        analogo = 'Dragon Rojo';
-        break;
-        case 2:
-        analogo = 'Viento Blanco';
-        break;
-        case 3:
-        analogo = 'Noche Negra/Azul';
-        break;
-        case 4:
-        analogo = 'Semilla Amarilla';
-        break;
-        case 5:
-        analogo = 'Serpiente Roja';
-        break;
-        case 6:
-        analogo = 'Muerte/Enlazador de Mundos Blanco';
-        break;
-        case 7:
-        analogo = 'Mano Negra/Azul';
-        break;
-        case 8:
-        analogo = 'Estrella Amarillo';
-        break;
-        case 9:
-        analogo = 'Luna Rojo';
-        break;
-        case 10:
-        analogo = 'Perro Blanco';
-        break;
-        case 11:
-        analogo = 'Mono Negro/Azul';
-        break;
-        case 12:
-        analogo = 'Humano Amarillo';
-        break;
-        case 13:
-        analogo = 'Caminante del Cielo Rojo';
-        break;
-        case 14:
-        analogo = 'Mago Blanco';
-        break;
-        case 15:
-        analogo = 'Aguila Negra/Azul';
-        break;
-        case 16:
-        analogo = 'Guerrero Amarillo';
-        break;
-        case 17:
-        analogo = 'Tierra Rojo';
-        break;
-        case 18:
-        analogo = 'Espejo Blanco';
-        break;
-        case 19:
-        analogo = 'Tormenta Negra/Azul';
-        break;
-    }
+    
     
     let antipoda = 0
     
@@ -415,68 +90,7 @@ export default function toKin(año, fecha){
       antipoda = sello + 10;
     }
     
-    switch(antipoda){
-        case 0:
-        antipoda = 'Sol Amarillo';
-        break;
-        case 1:
-        antipoda = 'Dragon Rojo';
-        break;
-        case 2:
-        antipoda = 'Viento Blanco';
-        break;
-        case 3:
-        antipoda = 'Noche Negra/Azul';
-        break;
-        case 4:
-        antipoda = 'Semilla Amarilla';
-        break;
-        case 5:
-        antipoda = 'Serpiente Roja';
-        break;
-        case 6:
-        antipoda = 'Muerte/Enlazador de Mundos Blanco';
-        break;
-        case 7:
-        antipoda = 'Mano Negra/Azul';
-        break;
-        case 8:
-        antipoda = 'Estrella Amarillo';
-        break;
-        case 9:
-        antipoda = 'Luna Rojo';
-        break;
-        case 10:
-        antipoda = 'Perro Blanco';
-        break;
-        case 11:
-        antipoda = 'Mono Negro/Azul';
-        break;
-        case 12:
-        antipoda = 'Humano Amarillo';
-        break;
-        case 13:
-        antipoda = 'Caminante del Cielo Rojo';
-        break;
-        case 14:
-        antipoda = 'Mago Blanco';
-        break;
-        case 15:
-        antipoda = 'Aguila Negra/Azul';
-        break;
-        case 16:
-        antipoda = 'Guerrero Amarillo';
-        break;
-        case 17:
-        antipoda = 'Tierra Roja';
-        break;
-        case 18:
-        antipoda = 'Espejo Blanco';
-        break;
-        case 19:
-        antipoda = 'Tormenta Negra/Azul';
-        break;
-    }
+    
     
     let guia = tono;
     
@@ -511,88 +125,26 @@ export default function toKin(año, fecha){
         if (sello > 12){
           guia = (sello + 8) - 20
         } else guia = sello + 8
-        break;  
+        break; 
+      default:
+        guia = 0   
     }
     
-      console.log(guia)
-      
-    switch(guia){
-        case 0:
-        guia = 'Sol Amarillo';
-        break;
-        case 1:
-        guia = 'Dragon Rojo';
-        break;
-        case 2:
-        guia = 'Viento Blanco';
-        break;
-        case 3:
-        guia = 'Noche Negra/Azul';
-        break;
-        case 4:
-        guia = 'Semilla Amarilla';
-        break;
-        case 5:
-        guia = 'Serpiente Roja';
-        break;
-        case 6:
-        guia = 'Muerte/Enlazador Blanco';
-        break;
-        case 7:
-        guia = 'Mano Negra/Azul';
-        break;
-        case 8:
-        guia = 'Estrella Amarillo';
-        break;
-        case 9:
-        guia = 'Luna Rojo';
-        break;
-        case 10:
-        guia = 'Perro Blanco';
-        break;
-        case 11:
-        guia = 'Mono Negro/Azul';
-        break;
-        case 12:
-        guia = 'Humano Amarillo';
-        break;
-        case 13:
-        guia = 'Caminante del Cielo Rojo';
-        break;
-        case 14:
-        guia = 'Mago Blanco';
-        break;
-        case 15:
-        guia = 'Aguila Negra/Azul';
-        break;
-        case 16:
-        guia = 'Guerrero Amarillo';
-        break;
-        case 17:
-        guia = 'Tierra Roja';
-        break;
-        case 18:
-        guia = 'Espejo Blanco';
-        break;
-        case 19:
-        guia = 'Tormenta Negra/Azul';
-        break;
-    }
-        
+            
     return {
       
       kin: kinMaya,
       tono: tono,
       sello: sello,
-      tribu: selloSolar,
-      vibracion: tonoLunar,
+      tribu: switchSealoffcolor(sello),
+      vibracion: switchTone(tono),
       raza: raza,
-      Umbral: selloSolar+' '+tonoLunar+' '+raza,
-      Onda: onda,
-      Oculto: oculto.split(' ').join(' '+tonoOculto+' '),
-      CatalizadorAnalogo: analogo.split(' ').join(' '+tonoLunar+' '),
-      ReflejoAntipoda: antipoda.split(' ').join(' '+tonoLunar+' '),
-      Guia: guia.split(' ').join(' '+tonoLunar+' ')
+      Umbral: switchSealoffcolor(sello)+' '+switchTone(tono)+' '+raza,
+      Onda: switchSealoffcolor(onda),
+      Oculto: switchSeal(oculto).split(' ').join(' '+switchTone(tonoOculto)+' '),
+      CatalizadorAnalogo: switchSeal(analogo).split(' ').join(' '+switchTone(tono)+' '),
+      ReflejoAntipoda: switchSeal(antipoda).split(' ').join(' '+switchTone(tono)+' '),
+      Guia: switchSeal(guia).split(' ').join(' '+switchTone(tono)+' ')
     }
    
     }

@@ -41,6 +41,8 @@ export default function switchTone(tono){
       case 13:
         tonoLunar = 'Cosmico';
         break;  
+      default:
+        return tonoLunar  
     }
      return tonoLunar
     }

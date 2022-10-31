@@ -62,6 +62,8 @@ export default function switchSeal(sello){
       case 19:
       selloSolar = 'Tormenta Negra/Azul';
       break;
+      default:
+        return selloSolar
   }
     return selloSolar
   }

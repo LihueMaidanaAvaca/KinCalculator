@@ -10,7 +10,7 @@ export function TodoItem({ date }) {
 
     return (
     <li>
-        {[kin.Umbral]}
+        {[kin.Oculto]}
     </li>
   )
 }
