@@ -11,7 +11,8 @@ export function TodoItem({ date }) {
 
     return (
     <>
-      <img src={kin.image} alt="sello" className="seal" />
+      <img src={kin.imgTone} alt="tono" className="tone"/>
+      <img src={kin.imgSeal} alt="sello" className="seal" />
      <li>
         {[kin.Umbral]}
      </li>
