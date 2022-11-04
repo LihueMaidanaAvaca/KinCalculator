@@ -7,7 +7,7 @@ import { TodoList } from './components/TodoList'
 
 
 function App() {
-  const[dates, setDates] = useState([{day:31, month:5, year:1995}])
+  const[dates, setDates] = useState([])
 
   const todoDayRef = useRef();
   const todoMonthRef = useRef();
