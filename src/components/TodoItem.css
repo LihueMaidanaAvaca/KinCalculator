@@ -5,17 +5,26 @@
 .sealposition{
     display: flex;
     justify-content: center;
-
+    
 }
 
 .seal {
     height: 25vh;
     border-radius: 50%; 
+    display: flex;
     
 }
 
 .tone {
     height: 25vh;
+    position: relative;
     float: left;
-    clear: left;
+}
+
+@media (max-width: 1250px) {
+    
+    h1{
+        display: flex;
+        justify-content: flex-start;
+    }
 }

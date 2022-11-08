@@ -12,8 +12,8 @@ export function TodoItem({ date }) {
     return (
     <>
       <section className='kinsection'>        
-       <img src={kin.imgTone} alt="tono" className="tone"/>
        <div className='sealposition'>
+        <img src={kin.imgTone} alt="tono" className="tone"/>
         <img src={kin.imgSeal} alt="sello" className="seal" />
        </div>
        <h1>
