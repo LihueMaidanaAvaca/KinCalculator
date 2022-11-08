@@ -21,7 +21,7 @@ export default function switchSealoffcolor(sello){
       selloSolar = 'Serpiente';
       break;
       case 6:
-      selloSolar = 'Muerte/Enlazador de Mundos';
+      selloSolar = 'Enlazador de Mundos';
       break;
       case 7:
       selloSolar = 'Mano';
@@ -42,7 +42,7 @@ export default function switchSealoffcolor(sello){
       selloSolar = 'Humano';
       break;
       case 13:
-      selloSolar = 'Caminante';
+      selloSolar = 'Caminante del Cielo';
       break;
       case 14:
       selloSolar = 'Mago';

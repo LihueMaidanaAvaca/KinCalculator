@@ -138,7 +138,7 @@ export default function toKin(año, fecha){
       kin: kinMaya,
       tono: tono,
       sello: sello,
-      tribu: switchSealoffcolor(sello),
+      tribu: switchSeal(sello),
       vibracion: switchTone(tono),
       raza: raza,
       Umbral: switchSealoffcolor(sello)+' '+switchTone(tono)+' '+raza,

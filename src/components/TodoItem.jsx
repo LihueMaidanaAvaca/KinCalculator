@@ -19,6 +19,11 @@ export function TodoItem({ date }) {
        <h1>
         {[kin.Umbral]}
        </h1>
+       <div className='props'>
+       <h3>Sello Solar: {kin.tribu}</h3>
+       <h3>Tono Lunar: {kin.vibracion}</h3>
+       <h3>Onda: {kin.Onda}</h3>
+       </div>
       </section>
     </>
   )

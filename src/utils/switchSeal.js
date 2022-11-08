@@ -21,7 +21,7 @@ export default function switchSeal(sello){
       selloSolar = 'Serpiente Rojo';
       break;
       case 6:
-      selloSolar = 'Muerte/Enlazador Blanco';
+      selloSolar = 'Enlazador Blanco';
       break;
       case 7:
       selloSolar = 'Mano Negra/Azul';

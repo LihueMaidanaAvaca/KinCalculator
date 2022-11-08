@@ -5,7 +5,7 @@
 .sealposition{
     display: flex;
     justify-content: center;
-    
+    margin-top: 1vh;    
 }
 
 .seal {
@@ -19,6 +19,12 @@
     height: 25vh;
     position: relative;
     overflow: visible;
+}
+
+.props {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 @media (max-width: 1250px) {
