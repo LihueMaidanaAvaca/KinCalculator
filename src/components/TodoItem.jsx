@@ -11,11 +11,13 @@ export function TodoItem({ date }) {
 
     return (
     <>
-      <img src={kin.imgTone} alt="tono" className="tone"/>
-      <img src={kin.imgSeal} alt="sello" className="seal" />
-     <li>
+      <section className='kinsection'>        
+       <img src={kin.imgTone} alt="tono" className="tone"/>
+       <img src={kin.imgSeal} alt="sello" className="seal" />
+       <h1>
         {[kin.Umbral]}
-     </li>
+       </h1>
+      </section>
     </>
   )
 }

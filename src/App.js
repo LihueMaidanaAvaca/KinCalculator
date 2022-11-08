@@ -21,8 +21,8 @@ function App() {
     const year = todoYearRef.current.value;
     if(month === '') return;
 
-    setDates((prevTodos) => {
-      return [...prevTodos, {id: uuidv4(), day, month, year}]
+    setDates(() => {
+      return [ {id: uuidv4(), day, month, year}]
     })
     
     todoDayRef.current.value = null;
