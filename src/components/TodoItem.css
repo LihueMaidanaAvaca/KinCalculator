@@ -1,12 +1,21 @@
+.kinsection {
+    height: 100vh;
+}
+
+.sealposition{
+    display: flex;
+    justify-content: center;
+
+}
+
 .seal {
     height: 25vh;
     border-radius: 50%; 
+    
 }
 
 .tone {
     height: 25vh;
-}
-
-.kinsection {
-    height: 100vh;
+    float: left;
+    clear: left;
 }
