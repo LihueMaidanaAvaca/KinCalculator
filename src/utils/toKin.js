@@ -61,9 +61,12 @@ export default function toKin(año, fecha){
       
     if(tono === 1){
       onda = sello
+    } else if(sello === 0){
+      ondaNum = (tono-1)-20
     } else 
       ondaNum = (tono-1)-sello
-        if(ondaNum < 0){
+        
+    if(ondaNum < 0){
         onda = ondaNum * -1
         } else {
           onda = ondaNum
