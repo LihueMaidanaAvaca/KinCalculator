@@ -11,9 +11,11 @@ export default function toKin(año, fecha){
       kinMaya -= 260
     }
     
-    let sello = kinMaya 
+    let sello = parseInt(kinMaya) 
+
+    console.log("kin", sello)
     
-    if(sello > 20){do {
+    if(sello >= 20){do {
       sello -= 20;
       } while (sello >= 20);}
     
