@@ -11,15 +11,15 @@ export function TodoItem({ date }) {
 
     return (
     <>
-      <section className='kinsection'>        
+      <section className='kinsection '>        
        <div className='sealposition'>
-        <img src={kin.imgTone} alt="tono" className="tone"/>
-        <img src={kin.imgSeal} alt="sello" className="seal" />
+        <img src={kin.imgTone} alt="tono" className="tone animate__animated animate__fadeInLeft"/>
+        <img src={kin.imgSeal} alt="sello" className="seal animate__animated animate__flip" />
        </div>
        <h1>
         {[kin.Umbral]}
        </h1>
-       <div className='props'>
+       <div className='props animate__animated animate__fadeIn'>
        <h3>Sello Solar: {kin.tribu}</h3>
        <h3>Tono Lunar: {kin.vibracion}</h3>
        <h3>Onda: {kin.Onda}</h3>
