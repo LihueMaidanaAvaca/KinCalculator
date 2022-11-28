@@ -34,3 +34,16 @@
         justify-content: center;
     }
 }
+
+.nameandimage {
+    display: flex;
+}
+
+.littleseal {
+    border-radius: 50%;
+    height: 3vh;
+}
+
+.littletone {
+    height: 3vh;
+}

@@ -2,7 +2,7 @@ export default function switchSealoffcolor(sello){
     let selloSolar = ''
     
     switch(sello){
-      case 0:
+      case 0 || 20:
       selloSolar = 'Sol';
       break;
       case 1:

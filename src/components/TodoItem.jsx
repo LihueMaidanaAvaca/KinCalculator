@@ -20,8 +20,15 @@ export function TodoItem({ date }) {
         {[kin.Umbral]}
        </h1>
        <div className='props animate__animated animate__fadeIn'>
-       <h3>Sello Solar: {kin.tribu}</h3>
+       <div className='nameandimage'>
+       <h3>Sello Solar: {kin.tribu}
+       <img src={kin.imgSeal} alt="sello" className="littleseal animate__animated animate__flip" />
+       </h3>
+       </div>
+       <div className='nameandimage'>
        <h3>Tono Lunar: {kin.vibracion}</h3>
+       <img src={kin.imgTone} alt="tono" className="littletone animate__animated animate__fadeInLeft" />
+       </div>
        <h3>Onda: {kin.Onda}</h3>
        </div>
       </section>
