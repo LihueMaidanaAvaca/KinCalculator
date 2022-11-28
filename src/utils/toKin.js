@@ -147,7 +147,12 @@ export default function toKin(año, fecha){
       ReflejoAntipoda: switchSeal(antipoda).split(' ').join(' '+switchTone(tono)+' '),
       Guia: switchSeal(guia).split(' ').join(' '+switchTone(tono)+' '),
       imgSeal: imgSeals(sello),
-      imgTone: imgTone(tono)
+      imgTone: imgTone(tono),
+      imgWave: imgSeals(onda),
+      imgGuia: imgSeals(guia),
+      imgRight: imgSeals(analogo),
+      imgLeft: imgSeals(antipoda),
+      imgHide: imgSeals(oculto)
     }
    
     }
