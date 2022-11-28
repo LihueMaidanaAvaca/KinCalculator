@@ -20,7 +20,7 @@ export default function dayAndMonthK(day,month) {
     tablaOne = d+174;
     break;
   case 6:
-    tablaOne = d+206;
+    tablaOne = d+205;
     break;
   case 7:
     tablaOne = d+235; 
