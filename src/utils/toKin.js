@@ -56,21 +56,15 @@ export default function toKin(año, fecha){
         raza = 'error';  
     }
     
-    let onda = 0
-    let ondaNum = 0
-      
-    if(tono === 1){
+    let onda = 0;
+
+    if(sello < tono){
+      onda = (sello+20)-(tono-1)
+    } else if(sello > tono){
+      onda = sello - (tono-1)
+    } else if(tono === 1){
       onda = sello
-    } else if(sello === 0){
-      ondaNum = (tono-1)-20
-    } else 
-      ondaNum = (tono-1)-sello
-        
-    if(ondaNum < 0){
-        onda = ondaNum * -1
-        } else {
-          onda = ondaNum
-        }
+    } 
       
     
     
