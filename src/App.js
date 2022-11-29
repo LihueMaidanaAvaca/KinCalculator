@@ -37,9 +37,9 @@ function App() {
       <header className="App-header" >
         <TodoList dates={dates} />
         <div className='inputs'>
-        <input className='input animate__animated animate__fadeInTopLeft' ref={todoDayRef} type="number" min="1" max="31" placeholder="día"></input>
-        <input className='input animate__animated animate__fadeInTopLeft' ref={todoMonthRef} type="number" min="1" max="12" placeholder="mes"></input>
-        <input className='input animate__animated animate__fadeInTopLeft' ref={todoYearRef} type="number" placeholder="año"></input>
+        <input className='input animate__animated animate__backInUp' ref={todoDayRef} type="number" min="1" max="31" placeholder="día"></input>
+        <input className='input animate__animated animate__backInUp' ref={todoMonthRef} type="number" min="1" max="12" placeholder="mes"></input>
+        <input className='input animate__animated animate__backInUp' ref={todoYearRef} type="number" placeholder="año"></input>
         </div>
         <button className='button animate__animated animate__pulse' onClick={handleDateAdd} >💫</button>
         <h3 className='animate__animated animate__flash'>Hola. Ingrese su fecha de nacimiento</h3>

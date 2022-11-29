@@ -57,3 +57,12 @@
   }
 }
 
+.animate__animated.animate__flash {
+  --animate-duration: 10s;
+  --animate-delay: 5s;
+}
+
+.animate__animated.animate__fadeInTopLeft {
+  --animate-duration: 10s;
+  --animate-delay: 5s;
+}

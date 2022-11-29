@@ -21,17 +21,16 @@ export function TodoItem({ date }) {
        </h1>
        <div className='props animate__animated animate__fadeIn'>
        <div className='nameandimage'>
-       <h3>Sello Solar: {kin.tribu}
-       </h3>
        <img src={kin.imgSeal} alt="sello" className="littleseal animate__animated animate__flash" />
+       <h3>Sello Solar: {kin.tribu}</h3>
        </div>
        <div className='nameandimage'>
-       <h3>Tono Lunar: {kin.vibracion}</h3>
        <img src={kin.imgTone} alt="tono" className="littletone animate__animated animate__fadeInLeft" />
+       <h3>Tono Lunar: {kin.vibracion}</h3>
        </div>
        <div className='nameandimage'>
-       <h3>Onda: {kin.Onda}</h3>
        <img src={kin.imgWave} alt="sello" className="littleseal animate__animated animate__flash" />
+       <h3>Onda: {kin.Onda}</h3>
        </div>
        </div>
        <div>
