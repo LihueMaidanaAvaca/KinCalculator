@@ -22,6 +22,8 @@ import NuCib from '../assets/NuCib.png';
 
 export default function imgSeals(seal){
     switch(seal){
+        case 20:
+            return NuAhau;
         case 0:
             return NuAhau;
         case 1:
