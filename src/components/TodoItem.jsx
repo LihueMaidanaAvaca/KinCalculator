@@ -24,7 +24,7 @@ export function TodoItem({ date }) {
        <div className='props animate__animated animate__fadeIn'>
        <div className='nameandimage'>
        <img src={kin.imgSeal} alt="sello" className="littleseal animate__animated animate__flash" />
-       <Accordion defaultActiveKey="0" title="Sello Solar" id="basic-nav-dropdown">
+       <Accordion  title="Sello Solar" id="basic-nav-dropdown">
               <Accordion.Item eventKey="0">
               <Accordion.Header>Sello Solar:{kin.tribu}</Accordion.Header>
               <Accordion.Body>
@@ -35,7 +35,7 @@ export function TodoItem({ date }) {
        </div>
        <div className='nameandimage'>
        <img src={kin.imgTone} alt="tono" className="littletone animate__animated animate__fadeInLeft" />
-       <Accordion defaultActiveKey="1">
+       <Accordion  flush>
             <Accordion.Item eventKey="1">
         <Accordion.Header>Tono Lunar: {kin.vibracion}</Accordion.Header>
         <Accordion.Body>
