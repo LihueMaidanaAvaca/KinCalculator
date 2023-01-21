@@ -4,6 +4,7 @@ import dayAndMonthK from '../utils/dayAndMonthK.js';
 import toKin from '../utils/toKin';
 import './TodoItem.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Accordion from 'react-bootstrap/Accordion';
 
 export function TodoItem({ date }) {
   const { day : d, month : m, year : y } = date
@@ -23,15 +24,25 @@ export function TodoItem({ date }) {
        <div className='props animate__animated animate__fadeIn'>
        <div className='nameandimage'>
        <img src={kin.imgSeal} alt="sello" className="littleseal animate__animated animate__flash" />
-       <NavDropdown title={kin.tribu} id="basic-nav-dropdown">
-              Vida Entendimiento 
-            </NavDropdown>
+       <Accordion defaultActiveKey="0" title="Sello Solar" id="basic-nav-dropdown">
+              <Accordion.Item eventKey="0">
+              <Accordion.Header>Sello Solar:{kin.tribu}</Accordion.Header>
+              <Accordion.Body>
+          Vida Entendimiento
+        </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
        </div>
        <div className='nameandimage'>
        <img src={kin.imgTone} alt="tono" className="littletone animate__animated animate__fadeInLeft" />
-       <NavDropdown title={kin.vibracion} id="basic-nav-dropdown">
-              pensar para buscar distintas formas
-            </NavDropdown>
+       <Accordion defaultActiveKey="1">
+            <Accordion.Item eventKey="1">
+        <Accordion.Header>Tono Lunar: {kin.vibracion}</Accordion.Header>
+        <Accordion.Body>
+        pensar para buscar distintas formas
+        </Accordion.Body>
+      </Accordion.Item> 
+      </Accordion>    
        </div>
        <div className='nameandimage'>
        <img src={kin.imgWave} alt="sello" className="littleseal animate__animated animate__flash" />
