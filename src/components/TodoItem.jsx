@@ -2,7 +2,8 @@ import React from 'react';
 import yearK from '../utils/yearK';
 import dayAndMonthK from '../utils/dayAndMonthK.js';
 import toKin from '../utils/toKin';
-import './TodoItem.css'
+import './TodoItem.css';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export function TodoItem({ date }) {
   const { day : d, month : m, year : y } = date
@@ -22,11 +23,15 @@ export function TodoItem({ date }) {
        <div className='props animate__animated animate__fadeIn'>
        <div className='nameandimage'>
        <img src={kin.imgSeal} alt="sello" className="littleseal animate__animated animate__flash" />
-       <h3>Sello Solar: {kin.tribu}</h3>
+       <NavDropdown title={kin.tribu} id="basic-nav-dropdown">
+              Vida Entendimiento 
+            </NavDropdown>
        </div>
        <div className='nameandimage'>
        <img src={kin.imgTone} alt="tono" className="littletone animate__animated animate__fadeInLeft" />
-       <h3>Tono Lunar: {kin.vibracion}</h3>
+       <NavDropdown title={kin.vibracion} id="basic-nav-dropdown">
+              pensar para buscar distintas formas
+            </NavDropdown>
        </div>
        <div className='nameandimage'>
        <img src={kin.imgWave} alt="sello" className="littleseal animate__animated animate__flash" />
