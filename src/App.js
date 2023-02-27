@@ -7,7 +7,14 @@ import { NavBarHeader } from './components/NavBarHeader';
 
 
 function App() {
-  const[dates, setDates] = useState([])
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth() + 1;
+  const day = today.getDate();
+
+  console.log(day, month, year, "fecha")
+
+  const[dates, setDates] = useState([{id: uuidv4(), day, month, year}])
 
   const todoDayRef = useRef();
   const todoMonthRef = useRef();
@@ -30,7 +37,7 @@ function App() {
     todoYearRef.current.value = null;
   }
 
-  console.log(dates)
+  console.log(dates, "mira aca")
 
   return (
     

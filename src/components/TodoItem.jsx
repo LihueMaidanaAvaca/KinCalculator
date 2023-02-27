@@ -24,25 +24,11 @@ export function TodoItem({ date }) {
        <div className='props animate__animated animate__fadeIn'>
        <div className='nameandimage'>
        <img src={kin.imgSeal} alt="sello" className="littleseal animate__animated animate__flash" />
-       <Accordion  title="Sello Solar" id="basic-nav-dropdown">
-              <Accordion.Item eventKey="0">
-              <Accordion.Header>Sello Solar:{kin.tribu}</Accordion.Header>
-              <Accordion.Body>
-          Vida Entendimiento
-        </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
+       <h3>Sello Solar: {kin.tribu}</h3>     
        </div>
-       <div className='nameandimage'>
+       <div className='nameandimage'> 
        <img src={kin.imgTone} alt="tono" className="littletone animate__animated animate__fadeInLeft" />
-       <Accordion  flush>
-            <Accordion.Item eventKey="1">
-        <Accordion.Header>Tono Lunar: {kin.vibracion}</Accordion.Header>
-        <Accordion.Body>
-        pensar para buscar distintas formas
-        </Accordion.Body>
-      </Accordion.Item> 
-      </Accordion>    
+       <h3>Tono Lunar: {kin.vibracion}</h3>
        </div>
        <div className='nameandimage'>
        <img src={kin.imgWave} alt="sello" className="littleseal animate__animated animate__flash" />
@@ -61,4 +47,10 @@ export function TodoItem({ date }) {
       </section>
     </>
   )
+}
+
+TodoItem.defaultProps = {
+  day: 28,
+  month: 4,
+  year: 1994,
 }
